@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle, #020617, #000);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+#menu, #tutorial {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+.hidden { display: none; }
+
+canvas {
+  display: block;
+  margin: auto;
+  border: 2px solid #1e293b;
+  border-radius: 10px;
+  background: #020617;
+}
