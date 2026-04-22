@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcane Glyphs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+  <h1>🧙 Arcane Glyphs</h1>
+  <p>Draw magic symbols to defend the realm</p>
+  <button onclick="showTutorial()">How to Play</button>
+  <button onclick="startGame()">Start</button>
+</div>
+
+<div id="tutorial" class="hidden">
+  <h2>📜 How to Play</h2>
+  <p><b>Circle:</b> Draw a loop → clears all enemies 💥</p>
+  <p><b>Line:</b> Draw straight → lightning ⚡</p>
+  <p><b>Zigzag:</b> Draw sharp turns → chain attack 🔥</p>
+  <p>Don't let enemies reach the bottom ❤️</p>
+  <button onclick="hideTutorial()">Got it!</button>
+</div>
+
+<div id="hud" class="hidden">
+  <span id="score">Score: 0</span>
+  <span id="health">❤️ 5</span>
+  <span id="wave">Wave: 1</span>
+</div>
+
+<canvas id="gameCanvas" width="900" height="550"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
